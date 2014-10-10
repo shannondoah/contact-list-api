@@ -1,10 +1,24 @@
 <h1>Contacts</h1>
-<div id="contact-list"></div>
+<div>
+  <table class="table" id="contact-list">
+    <tr>
+      <th>ID</th>
+      <th>First Name</th>
+      <th>Last Name </th>
+      <th>Email </th>
+      <th>Delete? </th>
+    </tr>
+  </table> 
+</div>
 <br>
 <hr>
-<h3>Add a new Contact: </h3>
-<p>First Name: <input type="text" name="firstname"></p>
-<p>Last Name: <input type="text" name="lastname"></p>
-<p>Email: <input type="text" name="email"></p>
-<input type="submit" id="newcontact">
+<div id="footer">
+  <h3>Add a new Contact: </h3>
+  <form class="form-inline">
+    <input type="text" class="form-control" name="firstname" id="firstname" placeholder="First name...">
+    <input type="text" class="form-control" name="lastname" id="lastname" placeholder="Last name...">
+    <input type="text" class="form-control" name="email" id="email" placeholder="Email...">
+    <input class="btn btn-default" type="submit" id="newcontact">
+  </form>
+</div>
 

@@ -12,6 +12,8 @@ gem 'json'
 gem 'puma'
 gem 'tux'
 
+gem 'kaminari', '~>0.15', :require => 'kaminari/sinatra'
+
 group :development, :test do
   gem 'pry'
   gem 'shotgun'

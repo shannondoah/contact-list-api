@@ -1,0 +1,7 @@
+#footer {
+  padding-bottom: 50px;
+}
+
+tr:nth-child(even) {
+  background-color: lightgrey;
+}

@@ -9,10 +9,6 @@ get '/contacts' do
   contacts.to_json
 end
 
-get '/contacts/new' do
-  #??needed?
-end
-
 get '/contacts/:id' do
   content_type :json
   contact = Contact.find(params[:id])
@@ -26,6 +22,13 @@ post '/contacts' do
     lastname: params[:lastname],
     email: params[:email]
     )
+  contact.to_json
+end
+
+post '/contacts/:id' do
+  content_type :json
+  contact = Contact.find(params[:id])
+  Contact.destroy(contact.id)
   contact.to_json
 end
 
